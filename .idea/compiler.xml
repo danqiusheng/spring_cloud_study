@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud_consumer_ribbon" />
+        <module name="cloud_demo_service" />
         <module name="cloud_eureka_server" />
         <module name="spring_cloud_learning" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud_consumer_ribbon" target="1.8" />
+      <module name="cloud_demo_service" target="1.8" />
       <module name="cloud_eureka_server" target="1.8" />
       <module name="spring_cloud_learning" target="1.5" />
     </bytecodeTargetLevel>

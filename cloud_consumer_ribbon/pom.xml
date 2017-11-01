@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.moa</groupId>
-	<artifactId>cloud_eureka_server</artifactId>
+	<artifactId>cloud_consumer_ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cloud_eureka_server</name>
-	<description>eureka的服务端，注册中心</description>
+	<name>cloud_consumer_ribbon</name>
+	<description>消费者示例</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -17,6 +17,7 @@
 		<version>1.5.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,24 +27,30 @@
 	</properties>
 
 
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>1.5.4.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-			<version>1.5.4.RELEASE</version>
-		</dependency>
 	</dependencies>
 
 	<dependencyManagement>

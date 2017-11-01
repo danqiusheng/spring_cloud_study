@@ -1,0 +1,30 @@
+server:
+  port: 1111    #服务端口
+spring:
+  application:
+     name: eureka_server # 应用名称
+eureka:
+  instance:
+     hostname: localhost  # 应用本机名称
+     lease-expiration-duration-in-seconds: 30
+     #表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，在这个时间内若没收到下一次心跳，则将移除该instance。
+     lease-renewal-interval-in-seconds: 30
+    # 表示eureka client发送心跳给server端的频率
+    # 如果在leaseExpirationDurationInSeconds后，server端没有收到client的心跳，则将摘除该instance。除此之外
+    # 如果该instance实现了HealthCheckCallback，并决定让自己unavailable的话，则该instance也不会接收到流量。
+  client:
+     registerWithEureka: false  # 禁止客户端注册行为
+     fetchRegistry: false       #检索服务，注册中心只需要维护服务实例
+     serviceUrl:
+          defaultZone: http://localhost:1111/eureka/ # 注册中心
+  server:
+    enable-self-preservation: false  #单机版注册中心，关闭自我保护，剔除无效的实例
+endpoints:
+  shutdown:
+    enabled: true  #Spring Boot Actuator的shutdown endpoint默认是关闭的 #当需要停止服务时，向服务器post该请求即可http://ip:port/shutdown即可
+
+
+
+
+===
+

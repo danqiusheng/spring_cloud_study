@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.moa</groupId>
-	<artifactId>cloud_eureka_server</artifactId>
+	<artifactId>cloud_demo_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cloud_eureka_server</name>
-	<description>eureka的服务端，注册中心</description>
+	<name>cloud_demo_service</name>
+	<description>注册服务提供者</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -29,20 +29,18 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>1.5.4.RELEASE</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-			<version>1.5.4.RELEASE</version>
 		</dependency>
 	</dependencies>
 
@@ -57,6 +55,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 
 
 	<build>

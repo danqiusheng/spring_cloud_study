@@ -1,0 +1,10 @@
+server:
+  port: 9000  # 设置端口
+spring:
+  application:
+    name: cloud-consumer-ribbon #服务名称
+eureka:
+  client:
+    service-url:
+          defaultZone: http://localhost:1111/eureka/ #eureka服务注册中心的位置
+

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud_consumer_ribbon/cloud_consumer_ribbon.iml" filepath="$PROJECT_DIR$/cloud_consumer_ribbon/cloud_consumer_ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud_demo_service/cloud_demo_service.iml" filepath="$PROJECT_DIR$/cloud_demo_service/cloud_demo_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_eureka_server/cloud_eureka_server.iml" filepath="$PROJECT_DIR$/cloud_eureka_server/cloud_eureka_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud_learning.iml" filepath="$PROJECT_DIR$/spring_cloud_learning.iml" />
     </modules>
