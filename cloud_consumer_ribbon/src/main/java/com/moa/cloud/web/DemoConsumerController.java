@@ -18,8 +18,13 @@ public class DemoConsumerController {
 
     @RequestMapping(value="/consumer",method = RequestMethod.GET)
     public String index(){
-        System.out.println("consumer.....");
+        System.out.println("consumer.....consumer()...");
         return restTemplate.getForEntity("http://CLOUD-DEMO-SERVICE/hello",String.class).getBody();
     }
 
+    @RequestMapping(value="/get",method = RequestMethod.GET)
+    public String get(){
+        System.out.println("consumer.....get()...");
+        return restTemplate.getForObject("http://CLOUD-DEMO-SERVICE/get?id={1}",String.class,"123");
+    }
 }

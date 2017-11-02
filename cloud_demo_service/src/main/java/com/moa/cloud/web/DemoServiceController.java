@@ -30,4 +30,11 @@ public class DemoServiceController {
         return "Hello Demo_Service";
     }
 
+
+    @RequestMapping("/get")
+    public String get(String id){
+        System.out.println("id:"+id);
+        return "cloud_demo_service";
+    }
+
 }
