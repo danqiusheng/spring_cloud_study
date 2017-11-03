@@ -4,4 +4,4 @@ eureka:
               defaultZone: http://localhost:1111/eureka/  #指定注册中心
 spring:
   application:
-    name: cloud_demo_service  #服务命名
+    name: cloud-demo-service  #服务命名

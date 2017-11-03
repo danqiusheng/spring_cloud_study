@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Random;
+
 /**
  * Created by Administrator on 2017/11/1.
  */
@@ -32,8 +34,14 @@ public class DemoServiceController {
 
 
     @RequestMapping("/get")
-    public String get(String id){
+    public String get(String id) throws InterruptedException {
+        Thread.sleep(5000L);
         System.out.println("id:"+id);
+        ServiceInstance serviceInstance = discoveryClient.getLocalServiceInstance();
+        logger.info("/hello, host:"+serviceInstance.getHost()+";; serviceId:"+serviceInstance.getServiceId());
+        // 加入延时,触发断路器
+       int sleepTime = new Random().nextInt(8000);
+
         return "cloud_demo_service";
     }
 

@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/cloud_eureka_server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_demo_service/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_consumer_ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_hystrix_dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_hystrix_turbine/pom.xml" />
       </list>
     </option>
   </component>

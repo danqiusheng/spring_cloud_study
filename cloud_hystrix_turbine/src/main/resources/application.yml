@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: cloud-hystrix-turbine
+server:
+  port: 8989
+management:
+  port: 8990
+eureka:
+  client:
+    service-url:
+            defaultZone: http://localhost:1111/eureka/
+turbine:
+  app-config: cloud-consumer-ribbon #指定收集监控信息的服务名
+  cluster-name-expression: new String("default") # 指定集群的名称为default
+  combine-host-port: true
+
+
+
+
+
+
+
+
