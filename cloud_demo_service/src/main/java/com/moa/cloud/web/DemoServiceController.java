@@ -1,4 +1,5 @@
 package com.moa.cloud.web;
+import com.moa.cloud.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,16 @@ public class DemoServiceController {
        int sleepTime = new Random().nextInt(8000);
 
         return "cloud_demo_service";
+    }
+
+
+
+    @RequestMapping("/getUserById")
+    public User getUserById(String id){
+        System.out.println("search user..id:"+id+"...........");
+        User user =  new User(id,"李四"+id);
+        System.out.println(" search over .....");
+        return user;
     }
 
 }
