@@ -8,7 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud_consumer_ribbon" />
         <module name="cloud_demo_service" />
+        <module name="cloud_demo_service_api" />
         <module name="cloud_eureka_server" />
+        <module name="cloud_feign_consumer" />
         <module name="cloud_hystrix_dashboard" />
         <module name="cloud_hystrix_turbine" />
         <module name="spring_cloud_learning" />
@@ -17,7 +19,9 @@
     <bytecodeTargetLevel>
       <module name="cloud_consumer_ribbon" target="1.8" />
       <module name="cloud_demo_service" target="1.8" />
+      <module name="cloud_demo_service_api" target="1.8" />
       <module name="cloud_eureka_server" target="1.8" />
+      <module name="cloud_feign_consumer" target="1.8" />
       <module name="cloud_hystrix_dashboard" target="1.8" />
       <module name="cloud_hystrix_turbine" target="1.8" />
       <module name="spring_cloud_learning" target="1.5" />

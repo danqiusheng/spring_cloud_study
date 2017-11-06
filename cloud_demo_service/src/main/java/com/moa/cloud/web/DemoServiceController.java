@@ -14,7 +14,7 @@ import java.util.Random;
 /**
  * Created by Administrator on 2017/11/1.
  */
-@RestController
+@RestController()
 @Slf4j
 public class DemoServiceController {
 
@@ -24,7 +24,13 @@ public class DemoServiceController {
 
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String index() {
+    public String index()  {
+       // System.out.println(1/0);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         ServiceInstance serviceInstance = discoveryClient.getLocalServiceInstance();
         log.info("/hello, host:{};serviceId:{}" ,serviceInstance.getHost() , serviceInstance.getServiceId());
         return "Hello Demo_Service";
@@ -37,7 +43,6 @@ public class DemoServiceController {
         ServiceInstance serviceInstance = discoveryClient.getLocalServiceInstance();
         log.info("/hello, host:{};serviceId:{}" ,serviceInstance.getHost() , serviceInstance.getServiceId());
         // 加入延时,触发断路器
-
         return "cloud_demo_service";
     }
 
@@ -75,7 +80,21 @@ public class DemoServiceController {
     }
 
 
+    @RequestMapping(value = "/hello1",method = RequestMethod.GET)
+    public String hello(@RequestParam String name){
+        return "Hello:"+name;
+    }
 
 
+    @RequestMapping(value = "/hello2",method = RequestMethod.GET)
+    public User hello(@RequestHeader String name , @RequestHeader Integer age){
+        return new User(name,age);
+    }
+
+
+    @RequestMapping(value = "/hello3",method = RequestMethod.POST)
+    public String hello(@RequestBody User user){
+        return "Hello:"+user.getName()+","+user.getAge();
+    }
 
 }

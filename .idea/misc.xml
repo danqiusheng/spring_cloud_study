@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/cloud_consumer_ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_hystrix_dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_hystrix_turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_feign_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_demo_service_api/pom.xml" />
       </list>
     </option>
   </component>

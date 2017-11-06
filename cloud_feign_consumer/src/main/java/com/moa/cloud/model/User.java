@@ -1,8 +1,7 @@
 package com.moa.cloud.model;
 
 /**
- * Created by Administrator on 2017/11/3.
- * feign 调用默认构造函数的时候： 必须要有无参的构造函数。否则会出现转换User对象时抛出异常
+ * Created by Administrator on 2017/11/6.
  */
 public class User {
     private String id;
@@ -49,4 +48,5 @@ public class User {
     public void setAge(Integer age) {
         this.age = age;
     }
+
 }
