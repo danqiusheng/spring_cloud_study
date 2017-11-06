@@ -31,4 +31,7 @@ public class ConsumerService {
         System.out.println("consumer.....get()...");
         return restTemplate.getForEntity("http://CLOUD-DEMO-SERVICE/get?id={1}", String.class, "123").getBody();
     }
+
+
+
 }

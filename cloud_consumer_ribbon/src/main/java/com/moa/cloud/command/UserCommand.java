@@ -3,14 +3,17 @@ package com.moa.cloud.command;
 import com.moa.cloud.model.User;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
-import com.netflix.hystrix.HystrixThreadPoolKey;
-import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import org.springframework.web.client.RestTemplate;
 
 /**
  * Created by Administrator on 2017/11/3.
+ *  缓存：
+ *  1. 测试的时候需要初始化
+ *    HystrixRequestContext context =  HystrixRequestContext.getContextForCurrentThread();
+ *  2. 默认分配线程池10个线程，十次请求以上开始请求缓存
  */
 public class UserCommand extends HystrixCommand<User> {
+
 
     private RestTemplate restTemplate;
 
@@ -43,4 +46,5 @@ public class UserCommand extends HystrixCommand<User> {
         System.out.println("getFallback");
         return new User();
     }
+
 }
