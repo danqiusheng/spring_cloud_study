@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud_api_gateway" />
+        <module name="cloud_api_getway" />
+        <module name="cloud_config_server" />
         <module name="cloud_consumer_ribbon" />
         <module name="cloud_demo_service" />
         <module name="cloud_demo_service_api" />
@@ -17,6 +20,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud_api_gateway" target="1.8" />
+      <module name="cloud_api_getway" target="1.8" />
+      <module name="cloud_config_server" target="1.8" />
       <module name="cloud_consumer_ribbon" target="1.8" />
       <module name="cloud_demo_service" target="1.8" />
       <module name="cloud_demo_service_api" target="1.8" />

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+Hello... 出现错误了...
+<br/>
+<p th:text="${#httpServletRequest.getAttribute('msg')}"  th:unless="${#httpServletRequest.getAttribute('msg') == null}">未知错误</p>
+</body>
+</html>

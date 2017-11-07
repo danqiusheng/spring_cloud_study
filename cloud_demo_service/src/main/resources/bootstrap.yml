@@ -5,3 +5,6 @@ eureka:
 spring:
   application:
     name: cloud-demo-service  #服务命名
+  thymeleaf:
+    cache: false
+

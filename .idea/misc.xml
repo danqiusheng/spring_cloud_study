@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/cloud_hystrix_turbine/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_feign_consumer/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_demo_service_api/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_api_getway/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_config_server/pom.xml" />
       </list>
     </option>
   </component>

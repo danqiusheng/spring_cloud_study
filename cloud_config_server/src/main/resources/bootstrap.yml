@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+          git:
+            uri:
+            username: fangpinga@163.com
+            password: 20ff1314
+            search-paths:
+server:
+  port: 7001
+
