@@ -1,6 +1,9 @@
 spring:
   application:
-    name: cloud-api-gateway
+    name:  api-gateway
+  cloud:
+    config:
+          uri: http://localhost:7001/
 server:
   port: 5555
 eureka:
