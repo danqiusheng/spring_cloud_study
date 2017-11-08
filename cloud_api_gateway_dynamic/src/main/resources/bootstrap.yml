@@ -10,3 +10,7 @@ eureka:
   client:
     service-url:
           defaultZone: http://localhost:1111/eureka/
+
+management:
+  security:
+    enabled: false
