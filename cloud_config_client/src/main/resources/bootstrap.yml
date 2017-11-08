@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config #配置application
+  cloud:
+    config:
+      profile: dev  #获取开发的配置
+      label: master  #设置是哪一个主干获取
+      uri: http://localhost:7001/  # 配置中心
+server:
+  port: 7002
+

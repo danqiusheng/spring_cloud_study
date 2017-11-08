@@ -5,10 +5,10 @@ spring:
     config:
       server:
           git:
-            uri:
-            username: fangpinga@163.com
-            password: 20ff1314
-            search-paths:
+            uri: https://github.com/danqiusheng/spring_cloud_study/
+           # username:
+           # password:
+            search-paths: spring_cloud_config/config-repo
 server:
   port: 7001
 
