@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud_api_gateway" />
         <module name="cloud_api_gateway_dynamic" />
+        <module name="cloud_api_gateway_dynamic_filter" />
+        <module name="cloud_api_gateway_dynamic_routes" />
         <module name="cloud_api_getway" />
         <module name="cloud_config_client" />
         <module name="cloud_config_server" />
@@ -24,6 +26,8 @@
     <bytecodeTargetLevel>
       <module name="cloud_api_gateway" target="1.8" />
       <module name="cloud_api_gateway_dynamic" target="1.8" />
+      <module name="cloud_api_gateway_dynamic_filter" target="1.8" />
+      <module name="cloud_api_gateway_dynamic_routes" target="1.8" />
       <module name="cloud_api_getway" target="1.8" />
       <module name="cloud_config_client" target="1.8" />
       <module name="cloud_config_server" target="1.8" />

@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/cloud_config_server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_config_client/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_api_gateway_dynamic/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud_api_gateway_dynamic_filter/pom.xml" />
       </list>
     </option>
   </component>

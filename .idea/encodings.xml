@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cloud_api_gateway_dynamic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_api_gateway_dynamic_filter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_api_getway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_config_client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_config_server" charset="UTF-8" />
