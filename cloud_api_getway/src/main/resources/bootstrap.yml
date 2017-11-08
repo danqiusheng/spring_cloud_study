@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-api-getway
+    name: cloud-api-gateway
 server:
   port: 5555
 eureka:
