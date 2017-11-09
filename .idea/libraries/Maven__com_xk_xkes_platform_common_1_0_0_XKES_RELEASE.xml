@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.xk:xkes-platform-common:1.0.0.XKES.RELEASE">
+    <CLASSES>
+      <root url="jar://F:/m2/repo/com/xk/xkes-platform-common/1.0.0.XKES.RELEASE/xkes-platform-common-1.0.0.XKES.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://F:/m2/repo/com/xk/xkes-platform-common/1.0.0.XKES.RELEASE/xkes-platform-common-1.0.0.XKES.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://F:/m2/repo/com/xk/xkes-platform-common/1.0.0.XKES.RELEASE/xkes-platform-common-1.0.0.XKES.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

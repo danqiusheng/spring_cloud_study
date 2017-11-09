@@ -1,4 +1,4 @@
-package com.moa.cloud.filter;
+package com.xk.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -36,7 +36,7 @@ public class ErrorFilter extends ZuulFilter {
     public Object run() {
         RequestContext  ctx = RequestContext.getCurrentContext();
         Throwable throwable = ctx.getThrowable();
-        // TODO: 设置跳转到错误的页面 采用的转发(如果是异步请求出错... 跳转页面有问题? )
+        // TODO: 设置跳转到错误的页面 采用的转发(如果是异步请求出错....)
         sendErrorFilter.setErrorPath("/base/toIndex");
         // TODO: 自定义错误信息到错误页面显示
         ctx.getRequest().setAttribute("msg",throwable.getCause().getMessage());

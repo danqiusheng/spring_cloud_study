@@ -1,9 +1,9 @@
 spring:
   application:
-    name:  api-gateway
-  cloud:
-    config:
-          uri: http://localhost:7001/
+    name:  cloud-api-gateway
+#  cloud:
+#    config:
+#          uri: http://localhost:7001/
 server:
   port: 5555
 eureka:
@@ -15,19 +15,22 @@ eureka:
 zuul:
   routes:
       api-a:
-          path: /api/a/** #实际地址  Mapped URL path [/api/api/a/a/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+          path: /a/** #实际地址  Mapped URL path [/api/api/a/a/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
           serviceId: cloud-demo-service
       api-b:
-          path: /api/b/**  #实际地址/api/api/b/b  Mapped URL path [/api/api/b/b/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+          path: /b/**  #实际地址/api/api/b/b  Mapped URL path [/api/api/b/b/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
           serviceId: cloud-feign-consumer
       api-c:
           path: /c/** #实际地址/api/c  Mapped URL path [/api/c/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
           serviceId: cloud-demo-service
+
   prefix: /api # 设置访问前缀 需要测试 是否可以
+
   add-host-header: true  #添加Host头请求信息，以防重定向路径更改
+
 management:
   security:
-    enabled: false
+    enabled: false  #查看routes
  # retryable: false    关闭请求重试
 
 

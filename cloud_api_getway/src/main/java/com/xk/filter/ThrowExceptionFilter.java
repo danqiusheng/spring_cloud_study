@@ -1,13 +1,9 @@
-package com.moa.cloud.filter;
+package com.xk.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter;
 import org.springframework.stereotype.Component;
-
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by Administrator on 2017/11/7.

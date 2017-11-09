@@ -1,10 +1,8 @@
-package com.moa.cloud.filter;
+package com.xk.filter;
 
-import com.netflix.client.http.HttpRequest;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
