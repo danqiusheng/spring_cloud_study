@@ -13,5 +13,7 @@
     <file url="file://$PROJECT_DIR$/cloud_feign_consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_hystrix_dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_hystrix_turbine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_rabbitmq_hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_security_oauth2" charset="UTF-8" />
   </component>
 </project>

@@ -44,7 +44,7 @@ public class AccessFilter extends ZuulFilter {
      */
     @Override
     public int filterOrder() {
-        return 0;
+        return 1;
     }
 
     /**
@@ -53,6 +53,7 @@ public class AccessFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
+
         return true;
     }
 
@@ -65,14 +66,14 @@ public class AccessFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
         log.info("send {} to {} ",request.getMethod(),request.getRequestURL().toString());
-        Object access = request.getParameter("access");
-        if(access==null){
+        //Object access = request.getParameter("access");
+       /*  if(access==null){
             log.warn("access token is empty");
             // 如果没有，则令zuul过滤该请求，不对其进行路由
             ctx.setSendZuulResponse(false);
             //设置返回的状态码
             return null;
-        }
+        }*/
         log.info("acess token ok");
         return null;
     }

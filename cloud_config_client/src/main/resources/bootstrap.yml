@@ -6,6 +6,8 @@ spring:
       profile: dev  #获取开发的配置
       label: master  #设置是哪一个主干获取
       uri: http://localhost:7001/  # 配置中心
+      fail-fast: true  # 快速反应当前应用是否能顺序从配置中心获取到配置信息
 server:
   port: 7002
+
 

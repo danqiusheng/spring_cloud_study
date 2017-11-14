@@ -20,6 +20,8 @@
         <module name="cloud_feign_consumer" />
         <module name="cloud_hystrix_dashboard" />
         <module name="cloud_hystrix_turbine" />
+        <module name="cloud_rabbitmq_hello" />
+        <module name="cloud_security_oauth2" />
         <module name="spring_cloud_learning" />
       </profile>
     </annotationProcessing>
@@ -38,6 +40,8 @@
       <module name="cloud_feign_consumer" target="1.8" />
       <module name="cloud_hystrix_dashboard" target="1.8" />
       <module name="cloud_hystrix_turbine" target="1.8" />
+      <module name="cloud_rabbitmq_hello" target="1.8" />
+      <module name="cloud_security_oauth2" target="1.8" />
       <module name="spring_cloud_learning" target="1.5" />
     </bytecodeTargetLevel>
   </component>
