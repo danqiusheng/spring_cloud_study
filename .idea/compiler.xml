@@ -23,6 +23,7 @@
         <module name="cloud_rabbitmq_hello" />
         <module name="cloud_security_oauth2" />
         <module name="spring_cloud_learning" />
+        <module name="spring_security_oauth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +44,7 @@
       <module name="cloud_rabbitmq_hello" target="1.8" />
       <module name="cloud_security_oauth2" target="1.8" />
       <module name="spring_cloud_learning" target="1.5" />
+      <module name="spring_security_oauth" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

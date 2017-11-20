@@ -15,5 +15,6 @@
     <file url="file://$PROJECT_DIR$/cloud_hystrix_turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_rabbitmq_hello" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_security_oauth2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_security_oauth" charset="UTF-8" />
   </component>
 </project>

@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/cloud_api_gateway_dynamic_filter/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_rabbitmq_hello/pom.xml" />
         <option value="$PROJECT_DIR$/cloud_security_oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_security_oauth/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public interface UserService {
 
     @RequestMapping("/hello")
-    public String index();
+   String index();
 
 
     // 在feign中绑定参数必须通过value属性来指明具体的参数名

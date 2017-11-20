@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/cloud_rabbitmq_hello/cloud_rabbitmq_hello.iml" filepath="$PROJECT_DIR$/cloud_rabbitmq_hello/cloud_rabbitmq_hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud_security_oauth2/cloud_security_oauth2.iml" filepath="$PROJECT_DIR$/cloud_security_oauth2/cloud_security_oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud_learning.iml" filepath="$PROJECT_DIR$/spring_cloud_learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_security_oauth/spring_security_oauth.iml" filepath="$PROJECT_DIR$/spring_security_oauth/spring_security_oauth.iml" />
     </modules>
   </component>
 </project>
